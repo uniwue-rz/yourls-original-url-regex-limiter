@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-10-30 17:17+0100\n"
+"PO-Revision-Date: 2023-10-30 18:07+0100\n"
+"Last-Translator: Lucas Kinne <lucas.kinne@uni-wuerzburg.de>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: yourls__;yourls_e;yourls_s;yourls_se;"
+"yourls_esc_attr__;yourls_esc_html__;yourls_x;yourls_ex;yourls_esc_attr_x;"
+"yourls_esc_html_x;yourls_n:1,2;yourls_nx:1,2;yourls_n_noop:1,2;"
+"yourls_nx_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/models/dict.php:37
+msgid "Toggle URL Limiter status by corresponding domain regex"
+msgstr ""
+"URL Limiter Status anhand des zugehörigen regulären Ausdrucks der Domäne "
+"umschalten"
+
+#: src/models/dict.php:39
+msgid ""
+"Something went wrong! Please try again later or contact the administrator if "
+"the problem persists."
+msgstr ""
+"Da ist etwas schiefgelaufen! Bitte versuche es später erneut oder "
+"kontaktiere den Administrator, falls das Problem weiterhin besteht."
+
+#: src/models/dict.php:42
+msgid "Nonce expired or invalid. Please refresh the page."
+msgstr "Nonce abgelaufen oder ungültig. Bitte aktualisiere die Seite."
+
+#: src/models/dict.php:43
+msgid "There is an internal PCRE error. Please check the regex syntax."
+msgstr ""
+"Interner PCRE-Fehler. Bitte überprüfe die Syntax des regulären Ausdrucks."
+
+#: src/models/dict.php:44
+msgid "The backtrack limit is exhausted."
+msgstr "Die Backtrack-Grenze ist erreicht."
+
+#: src/models/dict.php:45
+msgid "The JIT stack limit is exhausted."
+msgstr "Die JIT-Stapelgrenze ist erreicht."
+
+#: src/models/dict.php:46
+msgid "The recursion limit is exhausted."
+msgstr "Die Rekursionsgrenze ist erreicht."
+
+#: src/models/dict.php:47
+msgid "The UTF-8 data is malformed."
+msgstr "Die UTF-8-Daten sind deformiert."
+
+#: src/models/dict.php:48
+msgid "The offset doesn't correspond to the begin of a valid UTF-8 code point."
+msgstr "Der Versatz gleicht nicht dem Beginn eines gültigen UTF-8 Codepoints."
+
+#: src/models/dict.php:50
+msgid ""
+"This URL is blocked by URL Limiter policies. This means that you cannot "
+"create and edit similar URLs. Please contact the administrator if you think "
+"this is a mistake and want this URL to be allowed."
+msgstr ""
+"Diese URL ist durch URL Limiter Richtlinien blockiert. Dies bedeutet, dass "
+"du keine ähnlichen URLs erstellen und bearbeiten kannst. Bitte kontaktiere "
+"den Administrator, falls es sich deiner Meinung nach um einen Fehler handelt "
+"und diese URL erlaubt sein sollte."
+
+#: src/models/dict.php:54
+#, php-format
+msgid "Error on line #%d: %s"
+msgstr "Fehler in Zeile #%d: %s"
+
+#: src/models/dict.php:56
+#, php-format
+msgid ""
+"URL Limiter policies could not be updated due to the domain being involved "
+"in a more complex regex. <strong>Please update it manually at the <a href="
+"\"%s\">settings page</a></strong>."
+msgstr ""
+"URL Limiter Richtlinien konnten nicht aktualisiert werden, da die Domäne in "
+"einen komplexeren Regex involviert ist. <strong>Bitte aktualisiere den "
+"Eintrag manuell auf der <a href=\"%s\">Einstellungsseite</a></strong>."
+
+#: src/models/dict.php:60
+msgid "- translation not found -"
+msgstr "- Keine Übersetzung gefunden -"
+
+#: src/models/dict.php:61
+msgid "URL Limiter Settings"
+msgstr "URL Limiter Einstellungen"
+
+#: src/models/dict.php:62
+msgid "URL Allow List"
+msgstr "Liste erlaubter URLs"
+
+#: src/models/dict.php:63
+msgid "URL Block List"
+msgstr "Liste blockierter URLs"
+
+#: src/models/dict.php:64
+msgid "User Bypass List"
+msgstr "Liste von umgehungsberechtigten Benutzern"
+
+#: src/models/dict.php:65
+#, php-format
+msgid "Use websites like %s to verify and validate your regexes."
+msgstr ""
+"Benutze Webseiten wie %s, um deine regulären Ausdrücke zu verifizieren und "
+"zu validieren."
+
+#: src/models/dict.php:66
+msgid "One item per line."
+msgstr "Ein Eintrag pro Zeile."
+
+#: src/models/dict.php:68
+msgid ""
+"Items are interpreted as regular expressions and matched against the "
+"original URL on creation and updates."
+msgstr ""
+"Einträge werden als reguläre Ausdrücke interpretiert und gegen die Original-"
+"URL beim Erstellen und Bearbeiten abgeglichen."
+
+#: src/models/dict.php:71
+msgid "Leaving this field empty means that all original URLs are allowed."
+msgstr ""
+"Dieses Feld freizulassen bewirkt, dass alle Original-URLs erlaubt sind."
+
+#: src/models/dict.php:73
+msgid "The original URL <strong>may not match any item</strong> of this list."
+msgstr ""
+"Die Original-URL <strong>darf mit keinem Eintrag</strong> dieser Liste "
+"übereinstimmen."
+
+#: src/models/dict.php:76
+msgid "The original URL <strong>must match any item</strong> of this list."
+msgstr ""
+"Die Original-URL <strong>muss mit einem beliebigen Eintrag</strong> dieser "
+"Liste übereinstimmen."
+
+#: src/models/dict.php:77
+msgid ""
+"Items are interpreted as normal strings and matched against the user's name."
+msgstr ""
+"Einträge werden als normale Zeichenketten interpretiert und mit dem Namen "
+"des Benutzers abgeglichen."
+
+#: src/models/dict.php:78
+msgid "Users in this list bypass all restrictions enforced by this plugin."
+msgstr ""
+"Benutzer in dieser Liste dürfen alle Einschränkungen, die von diesem Plugin "
+"durchgesetzt werden, umgehen."
+
+#: src/models/dict.php:79
+msgid "Submit"
+msgstr "Absenden"
+
+#: src/models/dict.php:80
+msgid "This URL is allowed by URL Limiter policies."
+msgstr "Diese URL ist durch URL Limiter Richtlinien erlaubt."
+
+#: src/models/dict.php:81
+#, php-format
+msgid "The domain <strong>%s</strong> is now <strong>%s</strong>."
+msgstr "Die Domäne <strong>%s</strong> ist jetzt <strong>%s</strong>."
+
+#: src/models/dict.php:82
+msgid "URL Status"
+msgstr "URL Status"
+
+#: src/models/dict.php:83
+msgid "allowed"
+msgstr "erlaubt"
+
+#: src/models/dict.php:84
+msgid "blocked"
+msgstr "blockiert"
+
+#: src/models/dict.php:85
+msgid "processed"
+msgstr "verarbeitet"
+
+#: src/models/dict.php:86
+msgid "undecided"
+msgstr "unentschieden"
+
+#: src/models/dict.php:87
+#, php-format
+msgid "Show links that are %s by URL Limiter policies."
+msgstr "Zeige Links, die von den URL Limiter Richtlinien %s werden."
