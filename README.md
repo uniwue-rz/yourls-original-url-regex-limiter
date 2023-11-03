@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/uniwue-rz/yourls-original-url-regex-limiter">
-    <img height="200" src="./assets/imgs/logo.svg" alt="Plugin Logo">
+    <img height="200" src="./original-url-regex-limiter/assets/imgs/logo.svg" alt="Plugin Logo">
   </a>
 </p>
 
@@ -81,19 +81,19 @@ After that, head to your yourls' plugin list and activate it.
 ## Usage
 
 Main table view with added URL status column and toggle-by-domain actions button:
-<img src="./assets/imgs/main-table.png">
+<img src="./original-url-regex-limiter/assets/imgs/main-table.png">
 
 Error upon creation/editing of blocked URLs:
-<img src="./assets/imgs/main-table-error.png">
+<img src="./original-url-regex-limiter/assets/imgs/main-table-error.png">
 
 Successfully toggling a URL by domain regex:
-<img src="./assets/imgs/main-table-toggle-success.png">
+<img src="./original-url-regex-limiter/assets/imgs/main-table-toggle-success.png">
 
 Failing to toggle a URL by domain regex that is involved in a more complex regex:
-<img src="./assets/imgs/main-table-toggle-error.png">
+<img src="./original-url-regex-limiter/assets/imgs/main-table-toggle-error.png">
 
 Settings page of the plugin:
-<img src="./assets/imgs/settings-page.png">
+<img src="./original-url-regex-limiter/assets/imgs/settings-page.png">
 
 ## Contributing
 
