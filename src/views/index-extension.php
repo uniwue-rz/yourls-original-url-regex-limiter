@@ -132,9 +132,7 @@ class UniwueUrlLimiterIndexExtensionView
             )
         ];
 
-        array_splice($cells, 2, 0, [$url_limiter_status_cell]);
-
-        return $cells;
+        return array_slice($cells, 0, 2, true) + ['uniwue-url-limiter-status' => $url_limiter_status_cell] + array_slice($cells, 2, null, true);
     }
 
     /**
