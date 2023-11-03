@@ -27,11 +27,17 @@ class UniwueUrlLimiterRegexFormList extends UniwueUrlLimiterFormList
 	 * Returns a new regex form list from the given form list string.
 	 *
 	 * @param string $list
+	 * @param string $name
 	 * @return self
 	 */
-	public static function from_form_string(string $list): self
+	public static function from_form_string(string $list, string $name): self
 	{
-		return new self(empty($list) ? [] : explode("\n", $list));
+		return new self(
+			yourls_apply_filter(
+				$name,
+				empty($list) ? [] : explode("\n", $list)
+			)
+		);
 	}
 
 	/**

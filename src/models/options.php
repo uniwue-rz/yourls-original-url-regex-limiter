@@ -75,7 +75,8 @@ class UniwueUrlLimiterOptions
 			$options[$list] = call_user_func([$class, 'from_form_string'],
 				$reload_mode === self::RELOAD_MODE_DB ?
 					yourls_get_option($list, '') :
-					$_REQUEST[$list] ?? ''
+					$_REQUEST[$list] ?? '',
+				$list
 			);
 		}
 
