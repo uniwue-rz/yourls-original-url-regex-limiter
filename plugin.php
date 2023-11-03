@@ -3,7 +3,7 @@
 Plugin Name: Original URL Regex Limiter
 Plugin URI: https://github.com/uniwue-rz/yourls-original-url-regex-limiter
 Description: This plugin extends the functionality of YOURLS by allowing entitled persons to restrict the original URLs with regular expressions. It simultaneously supports both allow- and block-listing as well as granting eligible users the capability to circumvent these limitations.
-Version: 1.0
+Version: 1.1.0
 Author: University of Würzburg
 Author URI: https://github.com/uniwue-rz
 */
