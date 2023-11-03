@@ -184,3 +184,8 @@ class UniwueUrlLimiterSettingsView
 		];
 	}
 }
+
+// register page
+yourls_add_action('plugins_loaded', function () {
+	UniwueUrlLimiterSettingsView::get_instance();
+});

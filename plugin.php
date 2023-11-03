@@ -17,24 +17,6 @@ define('UNIWUE_URL_LIMITER_PREFIX', 'uniwue_url_limiter_');
 // load dependencies
 require_once(__DIR__ . '/src/controllers/auth.php');
 require_once(__DIR__ . '/src/controllers/enforcer.php');
+require_once(__DIR__ . '/src/views/base-extension.php');
 require_once(__DIR__ . '/src/views/index-extension.php');
 require_once(__DIR__ . '/src/views/settings.php');
-
-// load custom plugin pages
-yourls_add_action('plugins_loaded', function () {
-	UniwueUrlLimiterSettingsView::get_instance();
-});
-
-// inject custom scripts and styles
-yourls_add_action("html_head", function () {
-	$url = yourls_plugin_url(__DIR__);
-	echo <<<HEAD
-		<link rel="stylesheet" href="$url/assets/css/style.css" type="text/css">
-	HEAD;
-});
-yourls_add_action("html_footer", function () {
-	$url = yourls_plugin_url(__DIR__);
-	echo <<<HEAD
-		<script src="$url/assets/js/script.js" type="text/javascript" defer></script>
-	HEAD;
-});
