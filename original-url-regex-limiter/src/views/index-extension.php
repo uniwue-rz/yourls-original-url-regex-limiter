@@ -155,7 +155,7 @@ class UniwueUrlLimiterIndexExtensionView
         $title = UniwueUrlLimiterDict::translate('action_toggle_domain');
         $fail_msg = UniwueUrlLimiterDict::translate('error');
 
-        $actions['uniwue-url-limiter'] = [
+        $actions['uniwue-url-limiter-toggle-by-domain'] = [
             'href'    => "$url/ajax.php?id=$id&action=$action&keyword=$keyword&nonce=$nonce",
             'id'      => "$action-$id",
             'title'   => $title,

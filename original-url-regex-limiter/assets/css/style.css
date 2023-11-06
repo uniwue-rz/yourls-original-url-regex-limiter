@@ -11,7 +11,7 @@
     white-space: nowrap;
 }
 /* the action button that is appended to the action button list */
-.button_uniwue-url-limiter {
+.button_uniwue-url-limiter-toggle-by-domain {
     background: url('../imgs/both.svg') 0px center no-repeat;
     background-size: 23px;
     background-position: center;

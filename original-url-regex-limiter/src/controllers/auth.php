@@ -36,3 +36,8 @@ yourls_add_filter('amp_action_capability_map', function (array $action_capabilit
 
     return $action_capability_map;
 });
+yourls_add_filter('amp_button_capability_map', function (array $button_capability_map): array {
+    $button_capability_map[UniwueUrlLimiterAuthController::ACTION_TOGGLE_BY_DOMAIN] = UniwueUrlLimiterAuthController::ACTION_TOGGLE_BY_DOMAIN;
+
+    return $button_capability_map;
+});
