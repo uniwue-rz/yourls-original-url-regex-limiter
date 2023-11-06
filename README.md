@@ -57,13 +57,7 @@ This plugin extends the functionality of [YOURLS](https://github.com/YOURLS/YOUR
 ## Installation
 
 ### Download
-You can either install this plugin via composer with
-
-```bash
-composer require bla
-```
-
-or you can manually download the [latest release](https://github.com/uniwue-rz/yourls-original-url-regex-limiter/releases) and place it into yourls' `user/plugins` directory.
+Download the [latest release](https://github.com/uniwue-rz/yourls-original-url-regex-limiter/releases) and place it into yourls' `user/plugins` directory.
 
 ### Activation
 After that, head to your yourls' plugin list and activate it.
