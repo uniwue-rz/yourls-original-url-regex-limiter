@@ -59,6 +59,8 @@ This plugin extends the functionality of [YOURLS](https://github.com/YOURLS/YOUR
 ### Download
 Download the [latest release](https://github.com/uniwue-rz/yourls-original-url-regex-limiter/releases) and place it into yourls' `user/plugins` directory.
 
+***Note:** there is no need to run a `composer install`. Composer is only used to handle the PHP compatility check during development.*
+
 ### Activation
 After that, head to your yourls' plugin list and activate it.
 

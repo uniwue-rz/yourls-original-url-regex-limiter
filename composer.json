@@ -1,0 +1,21 @@
+{
+    "name": "uniwue-rz/yourls-original-url-regex-limiter",
+    "description": "This plugin allows administrators to limit the original URLs with regexes. It supports both whitelist and blacklist mode as well as granting specific users the ability to circumvent this limit.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Kinne",
+            "email": "lucas.kinne@uni-wuerzburg.de"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpcompatibility/php-compatibility": "*"
+    },
+    "scripts": {
+        "post-install-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/phpcompatibility/php-compatibility",
+        "post-update-cmd": "vendor/bin/phpcs --config-set installed_paths vendor/phpcompatibility/php-compatibility",
+        "check-php-compatibility": "vendor/bin/phpcs -p original-url-regex-limiter --runtime-set testVersion 7.4- -d error_reporting='E_ALL&~E_DEPRECATED' --standard=PHPCompatibility"
+    }
+}
