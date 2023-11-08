@@ -12,12 +12,12 @@
 }
 /* the action button that is appended to the action button list */
 .button_uniwue-url-limiter-toggle-by-domain {
-    background: url('../imgs/both.svg') 0px center no-repeat;
-    background-size: 23px;
-    background-position: center;
-    border: none;
-    padding: 3px;
-    border-radius: 2px;
+    background: url('../imgs/both.svg') 0px center no-repeat !important;
+    background-size: 23px !important;
+    background-position: center !important;
+    border: none !important;
+    padding: 3px !important;
+    border-radius: 2px !important;
 }
 /* the status filter in the footer of the table */
 #uniwue-url-limiter-table-control-limiter-status {
