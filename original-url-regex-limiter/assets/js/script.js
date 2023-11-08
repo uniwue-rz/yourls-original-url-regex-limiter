@@ -62,7 +62,32 @@ function uniwue_url_limiter_show_status_filter() {
     }
 }
 
+/**
+ * Register link edit callback.
+ */
+function uniwue_url_limiter_register_edit_mutation() {
+    new MutationObserver(uniwue_url_limiter_link_update).observe(
+        $('td[id^="url-"]').get(0),
+        {
+            childList: true
+        }
+    );
+}
+/**
+ * Execute url limiter status update after link is modified.
+ * 
+ * @param {array} mutations 
+ * @param {MutationObserver} observer 
+ */
+function uniwue_url_limiter_link_update(mutations, observer) {
+    for (const mutation of mutations) {
+        let id = mutation.target.id.split("-").pop();
+        uniwue_url_limiter_status_update(id);
+    }
+}
+
 // This function runs after page load.
 (function () {
+    uniwue_url_limiter_register_edit_mutation();
     uniwue_url_limiter_show_status_filter();
 })();
