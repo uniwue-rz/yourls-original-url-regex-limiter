@@ -176,7 +176,7 @@ class UniwueUrlLimiterIndexExtensionView
      */
     private static function is_index_page(): bool
     {
-        return strpos($_SERVER['REQUEST_URI'], parse_url(yourls_admin_url() . 'index.php', PHP_URL_PATH)) === 0;
+        return preg_match('/\/admin\/?(index\.php|\?|#|$)/', $_SERVER['REQUEST_URI']) === 1;
     }
 }
 
