@@ -128,7 +128,7 @@ class UniwueUrlLimiterIndexExtensionView
                 $id,
                 $base_url,
                 $is_allowed ? 'none' : 'inline-block',
-                UniwueUrlLimiterDict::translate('error_status_blocked')
+                UniwueUrlLimiterDict::translate('error_status_blocked', false)
             )
         ];
 

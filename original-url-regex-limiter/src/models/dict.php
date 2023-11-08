@@ -36,7 +36,7 @@ class UniwueUrlLimiterDict
              */
             'action_toggle_domain' => yourls__('Toggle URL Limiter status by corresponding domain regex', $this->domain),
             'error' => yourls__(
-                'Something went wrong! Please try again later or contact the administrator if the problem persists.',
+                'Something went wrong!<br/>Please try again later or contact the administrator if the problem persists.',
                 $this->domain
             ),
             'error_nonce_invalid' => yourls__('Nonce expired or invalid. Please refresh the page.', $this->domain),
@@ -47,13 +47,13 @@ class UniwueUrlLimiterDict
             'error_regex_malformed' => yourls__('The UTF-8 data is malformed.', $this->domain),
             'error_regex_offset' => yourls__('The offset doesn\'t correspond to the begin of a valid UTF-8 code point.', $this->domain),
             'error_status_blocked' => yourls__(
-                'This URL is blocked by URL Limiter policies. This means that you cannot create and edit similar URLs. ' .
+                'This URL is blocked by URL Limiter policies. This means that you cannot create and edit similar URLs.<br/>' .
                     'Please contact the administrator if you think this is a mistake and want this URL to be allowed.',
                 $this->domain
             ),
             'error_template_regex' => yourls__('Error on line #%d: %s', $this->domain),
             'error_template_toggle_domain' => yourls__(
-                'URL Limiter policies could not be updated due to the domain being involved in a more complex regex. ' .
+                'URL Limiter policies could not be updated due to the domain being involved in a more complex regex.<br/>' .
                     '<strong>Please update it manually at the <a href="%s">settings page</a></strong>.',
                 $this->domain
             ),
@@ -124,10 +124,17 @@ class UniwueUrlLimiterDict
      * Returns the translation for the given key.
      *
      * @param string $key
+     * @param bool $with_linebreaks
      * @return string
      */
-    public static function translate(string $key): string
+    public static function translate(string $key, bool $with_linebreaks = true): string
     {
-        return self::get_instance()->get_translation($key);
+        $translation = self::get_instance()->get_translation($key);
+
+        if (!$with_linebreaks) {
+            $translation = str_replace('<br/>', ' ', $translation);
+        }
+
+        return $translation;
     }
 }

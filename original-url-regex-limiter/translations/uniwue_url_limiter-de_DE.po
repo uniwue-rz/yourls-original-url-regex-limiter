@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-10-30 17:17+0100\n"
-"PO-Revision-Date: 2023-10-30 18:07+0100\n"
+"POT-Creation-Date: 2023-11-08 09:48+0100\n"
+"PO-Revision-Date: 2023-11-08 09:48+0100\n"
 "Last-Translator: Lucas Kinne <lucas.kinne@uni-wuerzburg.de>\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -25,10 +25,10 @@ msgstr ""
 
 #: src/models/dict.php:39
 msgid ""
-"Something went wrong! Please try again later or contact the administrator if "
-"the problem persists."
+"Something went wrong!<br/>Please try again later or contact the "
+"administrator if the problem persists."
 msgstr ""
-"Da ist etwas schiefgelaufen! Bitte versuche es später erneut oder "
+"Da ist etwas schiefgelaufen!<br/>Bitte versuche es später erneut oder "
 "kontaktiere den Administrator, falls das Problem weiterhin besteht."
 
 #: src/models/dict.php:42
@@ -63,13 +63,13 @@ msgstr "Der Versatz gleicht nicht dem Beginn eines gültigen UTF-8 Codepoints."
 #: src/models/dict.php:50
 msgid ""
 "This URL is blocked by URL Limiter policies. This means that you cannot "
-"create and edit similar URLs. Please contact the administrator if you think "
-"this is a mistake and want this URL to be allowed."
+"create and edit similar URLs.<br/>Please contact the administrator if you "
+"think this is a mistake and want this URL to be allowed."
 msgstr ""
 "Diese URL ist durch URL Limiter Richtlinien blockiert. Dies bedeutet, dass "
-"du keine ähnlichen URLs erstellen und bearbeiten kannst. Bitte kontaktiere "
-"den Administrator, falls es sich deiner Meinung nach um einen Fehler handelt "
-"und diese URL erlaubt sein sollte."
+"du keine ähnlichen URLs erstellen und bearbeiten kannst.<br/>Bitte "
+"kontaktiere den Administrator, falls es sich deiner Meinung nach um einen "
+"Fehler handelt und diese URL erlaubt sein sollte."
 
 #: src/models/dict.php:54
 #, php-format
@@ -80,11 +80,11 @@ msgstr "Fehler in Zeile #%d: %s"
 #, php-format
 msgid ""
 "URL Limiter policies could not be updated due to the domain being involved "
-"in a more complex regex. <strong>Please update it manually at the <a href="
-"\"%s\">settings page</a></strong>."
+"in a more complex regex.<br/><strong>Please update it manually at the <a "
+"href=\"%s\">settings page</a></strong>."
 msgstr ""
 "URL Limiter Richtlinien konnten nicht aktualisiert werden, da die Domäne in "
-"einen komplexeren Regex involviert ist. <strong>Bitte aktualisiere den "
+"einen komplexeren Regex involviert ist.<br/><strong>Bitte aktualisiere den "
 "Eintrag manuell auf der <a href=\"%s\">Einstellungsseite</a></strong>."
 
 #: src/models/dict.php:60
