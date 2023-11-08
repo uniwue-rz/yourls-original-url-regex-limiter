@@ -66,12 +66,14 @@ function uniwue_url_limiter_show_status_filter() {
  * Register link edit callback.
  */
 function uniwue_url_limiter_register_edit_mutation() {
-    new MutationObserver(uniwue_url_limiter_link_update).observe(
-        $('td[id^="url-"]').get(0),
-        {
-            childList: true
-        }
-    );
+    $('td[id^="url-"]').each(function() {
+        new MutationObserver(uniwue_url_limiter_link_update).observe(
+            $(this).get(0),
+            {
+                childList: true
+            }
+        );
+    });
 }
 /**
  * Execute url limiter status update after link is modified.
