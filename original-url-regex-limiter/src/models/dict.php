@@ -124,15 +124,15 @@ class UniwueUrlLimiterDict
      * Returns the translation for the given key.
      *
      * @param string $key
-     * @param bool $with_linebreaks
+     * @param bool $sanitize_attribute
      * @return string
      */
-    public static function translate(string $key, bool $with_linebreaks = true): string
+    public static function translate(string $key, bool $sanitize_attribute = false): string
     {
         $translation = self::get_instance()->get_translation($key);
 
-        if (!$with_linebreaks) {
-            $translation = str_replace('<br/>', ' ', $translation);
+        if ($sanitize_attribute) {
+            $translation = strip_tags(preg_replace('/\<br\w*\/?\>/', ' ', $translation));
         }
 
         return $translation;

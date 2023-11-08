@@ -165,7 +165,7 @@ class UniwueUrlLimiterRegexFormList extends UniwueUrlLimiterFormList
 			4 => UniwueUrlLimiterDict::translate('error_regex_offset'),
 			5 => UniwueUrlLimiterDict::translate('error_regex_malformed'),
 			6 => UniwueUrlLimiterDict::translate('error_regex_limit_jit')
-		][$error_code] ?? UniwueUrlLimiterDict::translate('error', false);
+		][$error_code] ?? UniwueUrlLimiterDict::translate('error', true);
 	}
 
 	/**
