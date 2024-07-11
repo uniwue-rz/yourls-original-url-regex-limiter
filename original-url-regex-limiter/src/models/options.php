@@ -144,4 +144,20 @@ class UniwueUrlLimiterOptions
 	{
 		return $this->options[self::USER_BYPASS_LIST];
 	}
+
+	/**
+	 * Returns the plugins base directory.
+	 *
+	 * @return string
+	 */
+	public static function get_plugin_url($file = ''): string
+	{
+		$path =  yourls_plugin_url(basename(dirname(__DIR__, 2)));
+
+		if (!empty($file)) {
+			$path .= '/' . $file;
+		}
+
+		return $path;
+	}
 }

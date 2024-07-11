@@ -113,20 +113,19 @@ class UniwueUrlLimiterIndexExtensionView
     {
         $id = $cells['actions']['id'];
         $is_allowed = UniwueUrlLimiterEnforcerController::is_url_allowed($url);
-        $base_url = yourls_plugin_url(dirname(__DIR__, 2));
 
         $url_limiter_status_cell = [
             'template' => sprintf(
                 '<div class="uniwue-url-limiter-table-url-column">
-                    <img id="uniwue-url-limiter-icon-check-%s" class="uniwue-url-limiter-table-url-icon" src="%s/assets/imgs/check.svg" style="display: %s" title="%s"/>
-                    <img id="uniwue-url-limiter-icon-cross-%s" class="uniwue-url-limiter-table-url-icon" src="%s/assets/imgs/cross.svg" style="display: %s" title="%s"/>
+                    <img id="uniwue-url-limiter-icon-check-%s" class="uniwue-url-limiter-table-url-icon" src="%s" style="display: %s" title="%s"/>
+                    <img id="uniwue-url-limiter-icon-cross-%s" class="uniwue-url-limiter-table-url-icon" src="%s" style="display: %s" title="%s"/>
                 </div>',
                 $id,
-                $base_url,
+                UniwueUrlLimiterOptions::get_plugin_url('assets/imgs/check.svg'),
                 $is_allowed ? 'inline-block' : 'none',
                 UniwueUrlLimiterDict::translate('success_status_allowed'),
                 $id,
-                $base_url,
+                UniwueUrlLimiterOptions::get_plugin_url('assets/imgs/cross.svg'),
                 $is_allowed ? 'none' : 'inline-block',
                 UniwueUrlLimiterDict::translate('error_status_blocked', true)
             )
@@ -149,7 +148,7 @@ class UniwueUrlLimiterIndexExtensionView
         }
 
         $id = substr($actions['share']['id'], 13);
-        $url = yourls_plugin_url(__DIR__);
+        $url = UniwueUrlLimiterOptions::get_plugin_url();
         $action = UniwueUrlLimiterAuthController::ACTION_TOGGLE_BY_DOMAIN;
         $nonce = yourls_create_nonce(UNIWUE_URL_LIMITER_PREFIX . $action);
         $title = UniwueUrlLimiterDict::translate('action_toggle_domain');
