@@ -148,14 +148,14 @@ class UniwueUrlLimiterIndexExtensionView
         }
 
         $id = substr($actions['share']['id'], 13);
-        $url = UniwueUrlLimiterOptions::get_plugin_url();
         $action = UniwueUrlLimiterAuthController::ACTION_TOGGLE_BY_DOMAIN;
         $nonce = yourls_create_nonce(UNIWUE_URL_LIMITER_PREFIX . $action);
+        $url = UniwueUrlLimiterOptions::get_plugin_url("src/views/ajax.php?id=$id&action=$action&keyword=$keyword&nonce=$nonce");
         $title = UniwueUrlLimiterDict::translate('action_toggle_domain');
         $fail_msg = UniwueUrlLimiterDict::translate('error', true);
 
         $actions['uniwue-url-limiter-toggle-by-domain'] = [
-            'href'    => "$url/ajax.php?id=$id&action=$action&keyword=$keyword&nonce=$nonce",
+            'href'    => "$url",
             'id'      => "$action-$id",
             'title'   => $title,
             'anchor'  => $title,

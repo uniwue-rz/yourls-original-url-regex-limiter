@@ -5,7 +5,12 @@ define('YOURLS_ADMIN', true);
 define('YOURLS_AJAX', true);
 
 // load dependencies
-require_once(dirname(__DIR__, 5) . '/includes/load-yourls.php');
+require_once(
+	is_file(dirname(__DIR__, 5) . '/includes/load-yourls.php') ?
+	dirname(__DIR__, 5) . '/includes/load-yourls.php' : // regular setup
+	dirname(__DIR__, 4) . '/yourls/includes/load-yourls.php' // local development
+);
+
 require_once(dirname(__DIR__) . '/controllers/auth.php');
 require_once(dirname(__DIR__) . '/controllers/enforcer.php');
 require_once(dirname(__DIR__) . '/models/dict.php');
